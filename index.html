@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table class="library">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read?</th>
+        </tr>  
+    </thead>
+    <tbody class="book-rows">
+
+    </tbody>
+    
+    </table>
+      
+    <dialog id="book-dialog">
+        <h2>Add a Book </h2>
+        <form id="formData">
+            <ul>
+                <li>
+                    <label for="book-title">Title: </label>
+                    <input type="text" name="book-title" id="book-title">
+                </li>
+                <li>
+                    <label for="book-author">Author: </label>
+                    <input type="text" name="book-author" id="book-author">
+                </li>
+                <li>
+                    <label for="book-pages">Pages: </label>
+                    <input type="text" name="book-pages" id="book-pages">
+                </li>
+                <li>
+                    <label for="book-read">Read?: </label>
+                    <input type="text" name="book-read" id="book-read">
+                </li>
+            </ul>
+            <div>
+                <button value="cancel" formmethod="dialog" id="closeBtn">Cancel</button>
+                <button    id="confirmBtn" value="default">Confirm</button>
+              </div>
+        </form>
+    </dialog>
+      <button id="show-modal">Add Book</button>
+    <script src="index.js"></script>
+</body>
+</html>
